@@ -54,13 +54,15 @@ class Song
   
   def self.new_from_filename(mp3file)
     new_song = self.new
-    new_song_array= mp3file.split(/[\-|\.]/)
+    new_song_array = mp3file.split(/[\-|\.]/)
     new_song.name = new_song_array[0].strip()
-    new_song.artist_name= new_song_array[1].strip()
+    new_song.artist_name = new_song_array[1].strip()
     #binding.pry
   end
   
-  
+  def self.destroy_all
+    @@all.clear
+  end
 end
 
 
