@@ -63,7 +63,7 @@ class Song
   
   def create_from_filename(mp3file)
     self.new_from_filename(mp3file)
-    save
+    
   end
   
   
