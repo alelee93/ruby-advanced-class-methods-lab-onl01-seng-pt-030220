@@ -61,6 +61,11 @@ class Song
     #binding.pry
   end
   
+  def create_from_filename(mp3file)
+    
+  end
+  
+  
   def self.destroy_all
     @@all.clear
   end
