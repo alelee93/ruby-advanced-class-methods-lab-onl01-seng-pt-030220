@@ -57,6 +57,7 @@ class Song
     new_song_array = mp3file.split(/[\-|\.]/)
     new_song.name = new_song_array[0].strip()
     new_song.artist_name = new_song_array[1].strip()
+    new_song
     #binding.pry
   end
   
